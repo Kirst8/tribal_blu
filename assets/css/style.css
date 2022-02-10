@@ -4,7 +4,7 @@ body {
     font-weight: 300;
     overflow-x: hidden;
     color: white;
-    background-color: #2C353C;
+    background-color: #62cff0f3;
 }
 
 a { 
@@ -51,7 +51,7 @@ p { line-height: 1.9; }
 
 .nav-item.active .tm-nav-link,
 .nav-item:hover .tm-nav-link {
-    color: #9CC;
+    color: rgb(255, 253, 119);
 }
 
 /* Page Background */
@@ -193,7 +193,7 @@ textarea {
     background-color: transparent;
     background-clip: padding-box;
     border: none;
-    border-bottom: 1px solid #999A9B;
+    border-bottom: 1px solid #76abe0;
     border-radius: 0;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     padding: 10px 0;
