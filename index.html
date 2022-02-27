@@ -52,6 +52,15 @@
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">JOIN OUR TRIBE TODAY</p>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                       <button class="btn btn-primary btn-xl">Register</button>
+                    </div>
+                </div>
         </header>
                 <!-- About Section-->
         <section class="page-section bg-primary text-black mb-0" id="about">
@@ -67,7 +76,7 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ms-auto"><p class="lead">We aim to build little warriors in a safe space.We want to help kids achieve their potential and improve on their existing skills </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">if you have any questions bringing fun to learning in a practical way</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">if you have any questions bringing fun to learning in a practical way.We offer boxing, fine motorskills play and yoga. Bringing interaction to all areas of the body so sign your kids up today</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -132,9 +141,9 @@
                     </div>
                     <!-- Portfolio Item 6-->
                     <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item mx-auto">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"></div>
                             </div>
                             <img class="img-fluid" src="img/gym6.jpg" alt="..." />
                         </div>
@@ -158,51 +167,76 @@
                         <!-- Service Section Button-->
                         <div class="text-center mt-4"><h5>We offer training for the little warriors such as fine motor skills, yoga and boxing</h5><br>
                             <h4>Only R300 every Tuesday and Thursday</h4><br>
-                            <h5>more information Register down below or send us message</h5> 
+                            <h5>more information send us message down below</h5> 
                         </div>
                     </div>
                 </section>
 
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="row justify-content-center">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                <!-- Contact Section-->
+                <section class="page-section" id="contact">
+                    <div class="container">
+                        <!-- Contact Section Heading-->
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
                         </div>
-                       <button class="btn btn-xl btn-outline-light">Register</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <!-- Contact Section Form-->
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-xl-7">
+                                <form id="contactForm" action="https://formspree.io/f/{form_id}" method="post">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    </div>
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                    </div>
+                                    <!-- Submit success message-->
+                                    <!---->
+                                    <!-- This is what your users will see when the form-->
+                                    <!-- has successfully submitted-->
+                                  
+                                    <!-- Submit error message-->
+                                    <!---->
+                                    <!-- This is what your users will see when there is-->
+                                    <!-- an error submitting the form-->
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                    <!-- Submit Button-->
+                                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                                </form>
+                            </div>
                         </div>
-                        <button class="btn btn-xl btn-outline-light">Message us</button>
                     </div>
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
+                </section>
+          
         <!-- Footer-->
         <footer class="footer text-center">
 
             <section class="page-section bg-secondary text-black mb-0" id="Services">
                 <div class="container">
                     <!-- About Section Heading-->
-                    <h2 class="page-section-heading text-center text-uppercase text-black">Services</h2>
+                    <h2 class="page-section-heading text-center text-uppercase text-black">Location</h2>
                     <!-- Icon Divider-->
                     <div class="divider-custom divider-dark">
                         <div class="divider-custom-line"></div>
@@ -357,18 +391,7 @@
                                 <label for="name">Injuries</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Injuries is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
+                          
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
@@ -377,7 +400,6 @@
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
                         </form>
-                                      </form>
                                     <!-- Portfolio Modal - Text-->
                                     
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
